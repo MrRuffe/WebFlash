@@ -249,6 +249,14 @@ body {
   border-radius: 16px;
   padding: 1rem 1.2rem;
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.35);
+  text-decoration: none;
+  color: var(--text);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.marquee-item:hover {
+  transform: translateY(-3px);
+  border-color: rgba(255, 73, 246, 0.5);
 }
 
 .marquee-item p {
