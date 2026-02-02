@@ -19,11 +19,10 @@
     <nav class="nav">
       <div class="logo">EmbryoNET Online</div>
       <div class="nav-links">
+        <a href="#feed">Feed</a>
+        <a href="#resources">Distros</a>
         <a href="#news">News</a>
-        <a href="#tools">Tools</a>
-        <a href="#signal">Signal</a>
       </div>
-      <button class="cta">Subscribe</button>
     </nav>
 
     <div class="hero-content">
@@ -119,7 +118,7 @@
       </div>
     </section>
 
-    <section id="resources" class="section alt">
+    <section id="resources" class="section alt resources">
       <div class="section-header">
         <h2>Linux Distros & Live Toolkits</h2>
         <p>Grab trusted distributions and portable recovery environments.</p>
@@ -160,12 +159,12 @@
       </div>
     </section>
 
-    <section id="news" class="section">
+    <section id="news" class="section news">
       <div class="section-header">
         <h2>Tech News Pulse</h2>
-        <p>Rapid briefings from AI, cloud, security, and product launches.</p>
+        <p>Rapid briefings from AI, cloud, security, and product launches. Tap a post to mark it read.</p>
       </div>
-      <div class="card-grid">
+      <div class="card-grid news-scroll" aria-live="polite">
         <article class="card">
           <span class="tag">AI & ML</span>
           <h3>Neural copilots jump from code to ops workflows</h3>
@@ -184,47 +183,18 @@
           <p>Security platforms merge with SOC tooling to compress incident response times.</p>
           <a href="#">Explore the trend →</a>
         </article>
-      </div>
-    </section>
-
-    <section id="tools" class="section alt">
-      <div class="section-header">
-        <h2>Tooling Radar</h2>
-        <p>Stack upgrades and builder-grade utilities.</p>
-      </div>
-      <div class="tool-grid">
-        <div class="tool">
-          <h4>FluxStack</h4>
-          <p>Realtime dashboards for product telemetry with anomaly alerts.</p>
-          <span>Observability</span>
-        </div>
-        <div class="tool">
-          <h4>PulseForge</h4>
-          <p>API-first design system generator with motion presets.</p>
-          <span>Design Ops</span>
-        </div>
-        <div class="tool">
-          <h4>QuantumVault</h4>
-          <p>Secrets rotation and governance with policy scoring.</p>
-          <span>Security</span>
-        </div>
-        <div class="tool">
-          <h4>OrbitMesh</h4>
-          <p>Edge deployment mesh with instant rollback controls.</p>
-          <span>Infrastructure</span>
-        </div>
-      </div>
-    </section>
-
-    <section id="signal" class="section signal">
-      <div class="signal-card">
-        <h2>Subscribe to Signal Burst</h2>
-        <p>Daily briefings, curated tool drops, and laser-focused research—delivered at 08:00 UTC.</p>
-        <form class="signal-form">
-          <input type="email" placeholder="you@domain.com" aria-label="Email address" />
-          <button type="submit">Get the signal</button>
-        </form>
-        <span class="note">No noise. One click to unsubscribe.</span>
+        <article class="card">
+          <span class="tag">Cloud</span>
+          <h3>Serverless platforms cut cold start times with new runtimes</h3>
+          <p>Cloud providers roll out lighter-weight runtimes tuned for bursty workloads.</p>
+          <a href="#">Open the brief →</a>
+        </article>
+        <article class="card">
+          <span class="tag">Product</span>
+          <h3>Collaboration suites add AI meeting summaries by default</h3>
+          <p>Teams lean into auto-capture tools to speed up documentation.</p>
+          <a href="#">See what’s new →</a>
+        </article>
       </div>
     </section>
   </main>
@@ -240,5 +210,6 @@
       <a href="#">Contact</a>
     </div>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
